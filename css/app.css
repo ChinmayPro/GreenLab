@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Groteska Regular";
+    src: url('../fonts/FontsFree-Net-Groteska-Regular.ttf');
+    src: url('../fonts/FontsFree-Net-Groteska-Regular.ttf') format('embedded-opentype'),
+         url('../fonts/FontsFree-Net-Groteska-Regular.ttf') format('woff2'),
+         url('../fonts/FontsFree-Net-Groteska-Regular.ttf') format('woff'),
+         url('../fonts/FontsFree-Net-Groteska-Regular.ttf') format('truetype');
+  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Groteska Regular';
+}
+.top {
+    text-align: center;
+}
+.main-wrapper {
+    background-color: black;
+    color: #fff;
+    height: 80vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.social-wrap a {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.social-wrap a img {
+    height: 20px;
+    width: 20px;
+}
+.one {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.one p {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.two {
+    padding-bottom: 30px;
+}
+.two p {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+.three p {
+    font-size: 18px;
+}
+.five {
+    padding-top: 30px;
+}
+.four img {
+    width: 80%;
+    height: auto;
+}
