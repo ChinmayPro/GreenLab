@@ -19,22 +19,22 @@ function triggerType(){
     setTimeout(()=>{
         postMessage("")
         typeWriter("Weight?")
-    },3000)
+    },3500)
     setTimeout(()=>{
         postMessage("",)
         typeWriter("Sleep?")
-    },4400)
+    },6500)
     setTimeout(()=>{
         postMessage("")
         typeWriter("Beauty?")
-    },5800)
+    },9000)
     setTimeout(()=>{
         postMessage("")
-        typeWriter("WellBeing?")
-    },7200)
+        typeWriter("Well-Being?")
+    },11000)
     setTimeout(()=>{
         clearTimeout();
         triggerType()
-    },10000);
+    },15000);
 }
 triggerType();
