@@ -1,43 +1,23 @@
+// importScripts("./typeWriter.js");
 var app = {
-    triggerType: function(){
-        setTimeout(()=>{
-            $("#type").html("");
-            app.typeWriter("Strength?")
-        })
-        setTimeout(()=>{
-            $("#type").html("");
-            app.typeWriter("Weight?")
-        },2000)
-        setTimeout(()=>{
-            $("#type").html("");
-            app.typeWriter("Sleep?")
-        },3400)
-        setTimeout(()=>{
-            $("#type").html("");
-            app.typeWriter("Beauty?")
-        },4800)
-        setTimeout(()=>{
-            $("#type").html("");
-            app.typeWriter("WellBeing?")
-        },6200)
-        setTimeout(app.triggerType,9000);
-    },
-    typeWriter: function(txt) {
-        var arr = ["Strength?", "Weight?", "Sleep?", "Beauty?", "Wellbeing?"]
-            
-        var i = 0;
-        var speed = 200;
-        function typeWrite() {
-            if (i < txt.length) {
-                document.getElementById("type").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWrite, speed);
+    createWorker: function() {
+        if(typeof(Worker) !== "undefined"){
+            if(typeof(w) == "undefined"){
+                w = new Worker("/greenlab/js/typeWriter.js");
             }
+            w.onmessage = function(event) {
+                if(event.data === ""){
+                    document.getElementById("type").innerHTML = "";
+                } else {
+                    document.getElementById("type").innerHTML += event.data;
+                }
+            };
+        } else {
+            console.log("No web worker support");
         }
-        typeWrite()
     },
     init: function(){
-        this.triggerType();
+        this.createWorker();
     }
 }
 $(document).ready(function(){
