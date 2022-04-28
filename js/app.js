@@ -3,7 +3,7 @@ var app = {
     createWorker: function() {
         if(typeof(Worker) !== "undefined"){
             if(typeof(w) == "undefined"){
-                w = new Worker("/greenlab/js/typeWriter.js");
+                w = new Worker("/js/typeWriter.js");
             }
             w.onmessage = function(event) {
                 if(event.data === ""){
