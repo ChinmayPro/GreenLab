@@ -59,3 +59,27 @@ body {
     width: 80%;
     height: 120px;
 }
+@media screen and (max-width:767px){
+    .one p {
+        font-size: 70px;
+    }
+    .top.four{
+        margin-top: 12vh;
+    }
+    .top.five {
+        margin-top: 3vh;
+    }
+    .top.three {
+        margin-top: 12vh;
+    }
+    .three p {
+        font-size: 45px;
+    }
+    .social-wrap a img {
+        height: 40px;
+        width: 40px;
+    }
+    .two p {
+        font-size: 35px;
+    }
+}
