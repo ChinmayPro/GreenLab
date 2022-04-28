@@ -20,6 +20,7 @@ body {
     height: 80vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    overflow: scroll;
 }
 .social-wrap a {
     display: inline-block;
