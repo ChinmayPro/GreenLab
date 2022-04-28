@@ -1,7 +1,7 @@
 function typeWriter(txt){
-    var arr = ["Strength?", "Weight?", "Sleep?", "Beauty?", "Wellbeing?"]      
+    var arr = ["Strength?", "Weight?", "Sleep?", "Beauty?", "Well-being?"]      
     var i = 0;
-    var speed = 200;
+    var speed = 300;
     function typeWrite() {
         if (i < txt.length) {
             postMessage(txt.charAt(i));
@@ -19,22 +19,22 @@ function triggerType(){
     setTimeout(()=>{
         postMessage("")
         typeWriter("Weight?")
-    },2000)
+    },3000)
     setTimeout(()=>{
         postMessage("",)
         typeWriter("Sleep?")
-    },3400)
+    },4400)
     setTimeout(()=>{
         postMessage("")
         typeWriter("Beauty?")
-    },4800)
+    },5800)
     setTimeout(()=>{
         postMessage("")
         typeWriter("WellBeing?")
-    },6200)
+    },7200)
     setTimeout(()=>{
         clearTimeout();
         triggerType()
-    },9000);
+    },10000);
 }
 triggerType();
