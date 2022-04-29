@@ -62,7 +62,7 @@ body {
 }
 @media screen and (max-width:767px){
     .one p {
-        font-size: 40px;
+        font-size: 45px;
     }
     .top.four{
         margin-top: 10vh;
@@ -74,13 +74,13 @@ body {
         margin-top: 3vh;
     }
     .three p {
-        font-size: 25px;
+        font-size: 20px;
     }
     .social-wrap a img {
         height: 20px;
         width: 20px;
     }
     .two p {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
