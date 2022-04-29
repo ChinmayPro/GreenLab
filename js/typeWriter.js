@@ -31,10 +31,10 @@ function triggerType(){
     setTimeout(()=>{
         postMessage("")
         typeWriter("Well-Being?")
-    },11000)
+    },11500)
     setTimeout(()=>{
         clearTimeout();
         triggerType()
-    },15000);
+    },16000);
 }
 triggerType();
