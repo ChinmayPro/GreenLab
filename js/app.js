@@ -22,7 +22,11 @@ var app = {
 }
 $(document).ready(function(){
     app.init();
-    if(window.closed){
-        Worker.terminate()
+    alert("in")
+    if(window.outerWidth < 767){
+        setTimeout(()=>{
+        alert("hi")
+        location.reload()
+    },16000)
     }
 })
