@@ -24,8 +24,8 @@ body {
 }
 .social-wrap a {
     display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 .social-wrap a img {
     height: 20px;
@@ -46,18 +46,18 @@ body {
     margin-top: 10vh;
 }
 .two p {
-    font-size: 18px;
+    font-size: 22px;
     margin: 0;
     padding: 0;
 }
 .three p {
-    font-size: 20px;
+    font-size: 18px;
 }
 .five {
     padding-top: 30px;
 }
 .four img {
-    width: 80%;
+    width: 50%;
     height: auto;
 }
 @media screen and (max-width:767px){
@@ -101,4 +101,13 @@ body {
         height: 75px;
         width: 75px;
     }
+    .social-wrap a {
+        display: inline-block;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
+
+.top.four {margin-top: 10vh;}
+
+.top.three {margin-top: 7vh;}
