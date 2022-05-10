@@ -83,6 +83,10 @@ body {
     .two p {
         font-size: 18px;
     }
+    .four img {
+        width: 80%;
+        height: auto;
+    }
 }
 @media screen and (min-width:2000px){
     .one p {
