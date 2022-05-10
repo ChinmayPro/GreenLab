@@ -71,7 +71,7 @@ body {
         margin-top: 0vh;
     }
     .top.three {
-        margin-top: 3vh;
+        margin-top: 7vh !important;
     }
     .three p {
         font-size: 16px;
@@ -88,7 +88,7 @@ body {
         height: auto;
     }
     .top.four {
-        margin-top: 5vh !important;
+        margin-top: 11vh !important;
     }
 }
 @media screen and (min-width:2000px){
