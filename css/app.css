@@ -110,6 +110,9 @@ body {
         margin-left: 25px;
         margin-right: 25px;
     }
+    .top.four {
+        margin-top: 5vh;
+    }
 }
 
 .top.four {margin-top: 3vh;}
