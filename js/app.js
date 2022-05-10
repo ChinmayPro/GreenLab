@@ -21,6 +21,8 @@ var app = {
     }
 }
 $(document).ready(function(){
-    console.log('coming here')
     app.init();
+    if(window.closed){
+        Worker.terminate()
+    }
 })
