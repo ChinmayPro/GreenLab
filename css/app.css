@@ -33,7 +33,7 @@ body {
 }
 .one {
     margin-bottom: 5vh;
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 .one p {
     font-size: 50px;
@@ -92,21 +92,24 @@ body {
     }
 }
 @media screen and (min-width:2000px){
+    .one {
+        margin-top: 5vh;
+    }
     .one p {
-        font-size: 160px;
+        font-size: 100px;
     }
     .two {
-        margin-top: 10vh;
+        margin-top: 7vh;
     }
-    .two p {font-size: 100px;}
+    .two p {font-size: 60px;}
     .three {
         margin-top: 5vh;
         margin-bottom: 5vh;
     }
-    .three p {font-size: 85px;}
+    .three p {font-size: 50px;}
     .social-wrap a img{
-        height: 75px;
-        width: 75px;
+        height: 55px;
+        width: 55px;
     }
     .social-wrap a {
         display: inline-block;
@@ -116,6 +119,6 @@ body {
     
 }
 
-.top.four {margin-top: 3vh;}
+.top.four {margin-top: 7vh;}
 
 .top.three {margin-top: 3vh;}
