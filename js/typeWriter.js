@@ -35,7 +35,8 @@ function triggerType(){
     setTimeout(()=>{
         clearTimeout();
         if(window.innerWidth < 767){
-            window.location.reload()
+            alert("hi")
+            location.reload()
         }
         triggerType()
     },16000);
